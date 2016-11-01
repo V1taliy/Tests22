@@ -1,17 +1,15 @@
 package Tests22;
 
 
-
 public class Problem {
 
 
-        private boolean useDFSAlgorithm;
+    private boolean useDFSAlgorithm;
 
 
-        public Problem(){
-            this.useDFSAlgorithm = useDFSAlgorithm;
-        }
-
+    public Problem() {
+        this.useDFSAlgorithm = useDFSAlgorithm;
+    }
 
 
     public boolean isUseDFSAlgorithm() {
@@ -32,11 +30,9 @@ public class Problem {
     }
 
     public String applyAlgorithm() {
-        if (useDFSAlgorithm == true) {
+        if (useDFSAlgorithm) {
             return applyDFSAlgorithm();
-        } else
-
-        {
+        } else {
             return applyBFSAlgorithm();
         }
 
