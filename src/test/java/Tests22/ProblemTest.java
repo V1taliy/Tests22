@@ -30,7 +30,7 @@ return "DFS";
         }
 
 else
-        return "BFS";
+        return problem2.applyAlgorithm().equals(true)
     }
 
 
