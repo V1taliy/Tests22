@@ -1,6 +1,5 @@
 package Tests22;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -16,14 +15,22 @@ public class ProblemTest {
    // private static Problem[] problemsArray = {};
 
     @Test
-    public void testDfsAlgorithm() {
+    public String testDfsAlgorithm() {
 
         problems.add(problem1);
         problems.add(problem2);
 
 
-        System.out.println(problems);
+        problem1.setUseDFSAlgorithm(true);
+        problem2.setUseDFSAlgorithm(false);
+        if(problem1.equals(true))
+        {
+return "DFS";
 
+        }
+
+else
+        return "BFS";
     }
 
 
